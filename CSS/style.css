@@ -1,0 +1,178 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Header*/
+header {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    height: 90px;
+    margin: 8px;
+}
+
+/*Menu*/
+
+nav {
+    width: 50%;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f5c518;
+}
+
+.menu ul li a:hover {
+    color: #8b0000;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f5c518;
+}
+
+a:hover {
+    color: #8b0000;
+}
+
+/*Seccion*/
+section {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/*Distancia de algunas etiquetas*/
+.distancia {
+    margin-top: 20px;
+}
+
+/*Cartas Temporadas*/
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+    color: #f5c518;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 20px #f5c518;
+    color: #ffffff;
+}
+
+.card.temp1 {
+    background-image: url("../imagenes/banner_1.jpg");
+}
+
+.card.temp2 {
+    background-image: url("../imagenes/banner_2.jpeg");
+}
+
+.card.temp3 {
+    background-image: url("../imagenes/banner_3.avif");
+}
+
+
+
+
+
+/*Personajes*/
+
+.personajes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.personaje {
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.personaje img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.personaje:hover {
+    transform: scale(1.10);
+    color: #ffffff;
+}
+
+
+
+/*FOTTER*/
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
