@@ -15,6 +15,9 @@ main {
     text-align: center;
 }
 
+h1{
+    color: #f5c518;
+}
 
 /*Menu*/
 
@@ -72,10 +75,10 @@ section {
 
 .video-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* Relación 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
