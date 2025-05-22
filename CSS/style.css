@@ -129,10 +129,18 @@ section {
 }
 
 .carta a {
-    margin-top: 60px;
     color: #f5c518;
-    text-shadow: 2px 2px 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    text-decoration: none;
 
+}
+
+.carta h2 {
+    margin-top: 60px;
 }
 
 .carta p {
@@ -218,9 +226,8 @@ footer {
         align-items: center;
     }
 
-    .card {
-        width: 90%;
-        height: auto;
+    .carta {
+        padding: 20px;
     }
 
     .video iframe {
@@ -248,10 +255,10 @@ footer {
         flex-wrap: wrap;
     }
 
-    .card {
+    .carta {
         width: 45%;
-        margin-bottom: 20px;
     }
+
 
     .video iframe {
         width: 100%;
