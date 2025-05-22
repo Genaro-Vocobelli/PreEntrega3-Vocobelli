@@ -112,12 +112,11 @@ section {
     padding: 20px;
 }
 
-.card {
+
+.carta {
     width: 250px;
     max-width: 100%;
     height: 150px;
-    color: #f5c518;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -129,21 +128,33 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.carta a {
+    margin-top: 60px;
+    color: #f5c518;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+.carta p {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.carta:hover {
     transform: scale(1.10);
     box-shadow: 0 4px 20px #f5c518;
     color: #ffffff;
 }
 
-.card.temp1 {
+.card_temp1 {
     background-image: url("../imagenes/banner_1.jpg");
 }
 
-.card.temp2 {
+.card_temp2 {
     background-image: url("../imagenes/banner_2.jpeg");
 }
 
-.card.temp3 {
+.card_temp3 {
     background-image: url("../imagenes/banner_3.avif");
 }
 
