@@ -1,0 +1,17 @@
+$amarillo: #f5c518;
+$blanco: white;
+$rojo: #8b0000;
+$fondo_header_footer: #1a1a1a;
+$fondo: #0d0d0d;
+$fondo_carta: #1e1e1e;
+
+
+@mixin tamanio ($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin espacio ($gapp, $padd){
+    gap: $gapp;
+    padding: $padd;
+}

@@ -1,0 +1,55 @@
+@use "./variables_" as*;
+/* MOBILE: hasta 480px */
+@media (max-width: 480px) {
+
+    main {
+        width: 83.33%;
+        padding: 0 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta {
+        padding: 20px;
+    }
+
+    .video iframe {
+        @include tamanio(auto, 100%);
+    }
+
+    .logo {
+        height: 50px;
+    }
+}
+
+
+
+/* TABLET: entre 481px y 1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .carta {
+        width: 45%;
+    }
+
+
+    .video iframe {
+        @include tamanio(auto, 100%);
+    }
+
+    .logo {
+        height: 60px;
+    }
+}

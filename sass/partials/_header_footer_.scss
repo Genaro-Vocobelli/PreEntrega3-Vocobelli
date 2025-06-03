@@ -1,0 +1,36 @@
+@use "./variables_" as*;
+
+.estilo-propio {
+    background-color: $fondo_header_footer;
+
+    a {
+        color: $amarillo;
+
+        &:hover {
+            transform: scale(1.10);
+            color: $rojo;
+        }
+    }
+
+    .menu-despegable {
+        background-color: $fondo_header_footer;
+    }
+
+    .estilo-hamburguesa {
+        background-color: $amarillo;
+        padding: 1rem;
+    }
+
+    .logo {
+        @include tamanio(70px, 100%);
+    }
+
+}
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: $fondo_header_footer;
+}

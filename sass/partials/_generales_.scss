@@ -1,0 +1,56 @@
+ @use "./variables_" as*;
+
+ * {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+ }
+
+
+ html,
+ body {
+     max-width: 100%;
+     overflow-x: hidden;
+ }
+
+
+ body {
+     background-color: $fondo;
+     color: $blanco;
+ }
+
+
+ main {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+     text-align: center;
+     padding: 0 1rem;
+ }
+
+
+ h1 {
+     color: $amarillo
+ }
+
+
+ a {
+     color: $amarillo;
+
+     &:hover {
+         color: $rojo;
+     }
+ }
+
+
+
+
+ section {
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+
+
+ .distancia {
+     margin-top: 20px;
+ }
