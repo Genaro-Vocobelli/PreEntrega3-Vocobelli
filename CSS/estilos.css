@@ -72,6 +72,20 @@ footer {
   background-color: #1a1a1a;
 }
 
+.logo {
+  animation: rotateIn 1s ease;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
 .video-responsive {
   position: relative;
   height: 315px;
@@ -140,6 +154,20 @@ footer {
   background-image: url("../imagenes/banner_3.avif");
 }
 
+.aparecer {
+  animation: slideInUp 1.2s ease-out both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .personajes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -164,6 +192,20 @@ footer {
   color: white;
 }
 
+.entrar {
+  animation: backInUp 0.8s ease-out both;
+}
+
+@keyframes backInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* MOBILE: hasta 480px */
 @media (max-width: 480px) {
   main {

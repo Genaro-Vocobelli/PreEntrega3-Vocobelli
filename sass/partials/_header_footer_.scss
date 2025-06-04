@@ -34,3 +34,18 @@ footer {
     text-align: center;
     background-color: $fondo_header_footer;
 }
+
+.logo {
+  animation: rotateIn 1s ease;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}

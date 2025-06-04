@@ -24,6 +24,22 @@
             color: $blanco;
         }
     }
-
-
 }
+
+
+.entrar {
+    animation: backInUp 0.8s ease-out both;
+}
+
+@keyframes backInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
